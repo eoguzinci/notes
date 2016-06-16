@@ -1,0 +1,16 @@
+Yapilacaklar listesi programi yaz Excel ya da Python'da.
+- Calendar olsun.
+- Timetable yapabilsin.
+- Outlookla senkronize olsun.
+- Kategoriler olsun.
+- Alarm ve deadlinelar olsun.
+- Drag & drop program yazmayi ogren
+
+Alinacaklar listesi programi yaz:
+- Kategori
+- Aciliyet puani
+- Fiyat
+- Toplam fiyat
+- Muadiller
+- Ozellikler (hidden)
+- drag & drop

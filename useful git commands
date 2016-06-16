@@ -1,0 +1,73 @@
+// useful git commands
+git --version
+
+git init // initialize a git repository inside the current folder
+
+git log /* press q to quit */
+git log --stat // show how much change made in the  files.
+
+git diff <commit_ID_old> <commit_ID_new> //shows the difference between two commits
+git diff // shows the differences between working directory and staging area
+git diff --staged // shows the difference between staging area and the last commit in the branch at the git repo
+
+git clone <URL>
+
+// Configurations
+git config --global color.ui auto
+git config --global core.editor "'/c/Program Files/Sublime Text 3/sublime_text.exe' -n -w" //makes sublime as the default editor
+git config --global push.default upstream 
+git config --global merge.conflictstyle diff3
+git config --list
+
+// go to the version of commit with <HEAD>
+git checkout <HEAD>
+
+git status // show shich files changed since the last commit
+
+git add <file>// add files to the staging area before committing them
+
+git commit
+git commit -m "your message"
+commit message templates: http://udacity.github.io/git-styleguide/
+
+git reset --hard // discards any changes in working directory or the staging area
+
+// Branches
+git branch // show the current branches
+git branch <branch-name> // creates a branch
+git branch Osman // creates a branch called Osman
+git checkout <branch-name> // make the <branch-name> as the current branch to commit changes.
+
+git log --graph --oneline <branch-name-1> ... <branch-name-n> // shows the branch tree in the bash
+
+git chekout -b <new_branch_name> // if you want to create a new branch to retain commits you create, equivalent to:
+	git branch <new_branch_name>
+	git checkout <new_branch_name>
+
+git merge <branch-1> <branch-2> // merges branch-2 into branch-1
+
+git show <commit-name> // shows the difference of the commit with its parent commit
+
+git branch -d <branch> // deletes the branch, making the commits inside unreachable if not merged
+
+git remote // to see the remote repositories
+git remote add origin <URL> //creates a remote repo at this URL website
+git remote -v // to see the remote repository information in verbose mode
+
+git push origin master // pushes the branch in your original folder to github folder
+
+git pull origin master // pulls the branch from your remote repository to local repository
+
+git fetch origin // takes the commits from github repo and creates a new branch and appends these commits on the new branch
+
+git pull origin master // git pull does the same thing with merge in case of any conflict between remote and local repo's
+	git fetch origin
+	git merge master origin/master
+
+git log <branch-name> // to see the commits in a specific branch w/o getting into it
+
+bash sarah_changes.sh https://github.com/eoguzinci/recipes.git // is the command when we made sarah to make change in our repository virtually.
+
+Pull request -> kind of merge request
+
+git reset <file_name> -> merge conflicti cozmene ragmen malladiysa kullan

@@ -1,0 +1,14 @@
+OpenMP notes
+Compilations:
+cc -fopenmp -o hello.exe hello.c
+Execution:
+export OMP_NUM_THREADS = 4 // number of threads in execution = 4
+./hello.exe  % to run the code
+
+omp_set_num_threads(int num_threads) % number of threads to be created for parallel region
+omp_get_num_threads() % number of threads currently executing the parallel region
+omp_get_max_threads() % max number of threads that can be allocated
+omp_get_thread_num() % thread number of the calling thread in currently executing region
+omp_get_num_procs() % number of processors available
+omp_get_wtime % gets the wall clock
+omp_get_wtick % resolution of timer in seconds

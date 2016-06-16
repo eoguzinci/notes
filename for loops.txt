@@ -1,0 +1,5 @@
+for (e1 = 0; e1 < noElems; e1++) {
+for (e2 = e1 + 1; e2 < noElems; e2++) {
+
+for e1=1:noElems;
+for e2=(e1+1):noElems;
