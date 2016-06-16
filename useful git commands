@@ -50,6 +50,9 @@ git show <commit-name> // shows the difference of the commit with its parent com
 
 git branch -d <branch> // deletes the branch, making the commits inside unreachable if not merged
 
+Usage GitHub
+-------------
+
 git remote // to see the remote repositories
 git remote add origin <URL> //creates a remote repo at this URL website
 git remote -v // to see the remote repository information in verbose mode
